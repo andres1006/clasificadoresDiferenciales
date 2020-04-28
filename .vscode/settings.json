@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "clasificador_diferencial_ea_vs_dcl_initialize.h": "c",
+        "clasificador_diferencial_ea_vs_dcl_emxapi.h": "c",
+        "__locale": "c",
+        "functional": "c",
+        "clasificador_diferencial_ea_vs_dft.h": "c",
+        "clasificador_diferencial_ep_vs_pks_terminate.h": "c"
+    }
+}

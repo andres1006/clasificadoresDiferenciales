@@ -1,0 +1,5 @@
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_EA_vs_DFT/CMakeFiles/rebuild_cache.dir
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_EA_vs_DFT/CMakeFiles/edit_cache.dir
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_EA_vs_DFT/src/CMakeFiles/rebuild_cache.dir
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_EA_vs_DFT/src/CMakeFiles/edit_cache.dir
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_EA_vs_DFT/src/CMakeFiles/main.dir

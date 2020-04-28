@@ -1,0 +1,5 @@
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/CMakeFiles/rebuild_cache.dir
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/CMakeFiles/edit_cache.dir
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/src/CMakeFiles/rebuild_cache.dir
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/src/CMakeFiles/edit_cache.dir
+/Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/src/CMakeFiles/main.dir

@@ -1,0 +1,10 @@
+Clasificador_diferencial_EP_vs_PKS.obj
+Clasificador_diferencial_EP_vs_PKS_emxAPI.obj
+Clasificador_diferencial_EP_vs_PKS_emxutil.obj
+Clasificador_diferencial_EP_vs_PKS_initialize.obj
+Clasificador_diferencial_EP_vs_PKS_terminate.obj
+CompactSVM.obj
+Linear.obj
+rtGetInf.obj
+rtGetNaN.obj
+rt_nonfinite.obj
