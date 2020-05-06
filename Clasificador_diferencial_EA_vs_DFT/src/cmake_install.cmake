@@ -1,4 +1,4 @@
-# Install script for directory: /Users/johnalexandergaleano/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_EA_vs_DFT/src
+# Install script for directory: /Users/andresagudelo/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_EA_vs_DFT/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -56,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andresagudelo/Documentos/OCTAVEproyects/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL
+CMAKE_SOURCE_DIR = /Users/andresagudelo/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andresagudelo/Documentos/OCTAVEproyects/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL
+CMAKE_BINARY_DIR = /Users/andresagudelo/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,7 +79,7 @@ CMAKE_BINARY_DIR = /home/andresagudelo/Documentos/OCTAVEproyects/clasificadoresD
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,8 +89,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -97,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andresagudelo/Documentos/OCTAVEproyects/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/CMakeFiles /home/andresagudelo/Documentos/OCTAVEproyects/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andresagudelo/Documentos/OCTAVEproyects/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andresagudelo/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/CMakeFiles /Users/andresagudelo/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andresagudelo/Documents/aura/clasificadoresDiferenciales/Clasificador_diferencial_DFT_vs_DCL/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -114,12 +117,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -132,12 +135,12 @@ depend:
 
 # Build rule for target.
 main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
 .PHONY : main
 
 # fast build rule for target.
 main/fast:
-	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
 # Help Target
